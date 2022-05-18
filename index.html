@@ -26,7 +26,10 @@
               <span></span>
             </span>
           </div>
-					<a href="#maincontent" class="skip-link">Skip to the main content</a>
+					<a href="#maincontent" class="skip-link">
+						Skip to the main content
+						<span class="visuallyhidden">Focus on the first article by skipping the navigation.</span>
+					</a>
           <div id="navbarMenu" class="navbar-menu">
             <nav class="navbar-end">
               <span class="navbar-item">
@@ -161,29 +164,30 @@
 							</pre>
 					<p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
 					<table>
+						<caption>Test table caption</caption>
 						<tr>
-							<td>Header</td>
-							<td>Header</td>
+							<th scope="col" id="column1">Header</th>
+							<th scope="col" id="column2">Header</th>
 						</tr>
 						<tr>
-							<td>cell</td>
-							<td>cell</td>
+							<td headers="column1">cell</td>
+							<td headers="column2">cell</td>
 						</tr>
 						<tr>
-							<td>cell</td>
-							<td>cell</td>
+							<td headers="column1">cell</td>
+							<td headers="column2">cell</td>
 						</tr>
 						<tr>
-							<td>cell</td>
-							<td>cell</td>
+							<td headers="column1">cell</td>
+							<td headers="column2">cell</td>
 						</tr>
 						<tr>
-							<td>cell</td>
-							<td>cell</td>
+							<td headers="column1">cell</td>
+							<td headers="column2">cell</td>
 						</tr>
 						<tr>
-							<td>cell</td>
-							<td>cell</td>
+							<td headers="column1">cell</td>
+							<td headers="column2">cell</td>
 						</tr>
 					</table>
 					<p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
@@ -224,7 +228,7 @@
 								<div class="content">
 									<div>Tristique senectus et netus et.</div>
 									<p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-									<p><a>Learn more</a></p>
+									<p><a tabindex="0">Learn more</a></p>
 								</div>
 							</div>
 						</div>
@@ -240,7 +244,7 @@
 									<div>Tempor orci dapibus ultrices in.</div>
 									<p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
 										sed risus.</p>
-									<p><a>Learn more</a></p>
+									<p><a tabindex="0">Learn more</a></p>
 								</div>
 							</div>
 						</div>
@@ -255,7 +259,7 @@
 								<div class="content">
 									<div> Leo integer malesuada nunc vel risus. </div>
 									<p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-									<p><a>Learn more</a></p>
+									<p><a tabindex="0">Learn more</a></p>
 								</div>
 							</div>
 						</div>
@@ -440,7 +444,10 @@
 							</div>
 							<p class="title">New York</p>
 							<p class="subtitle">Fri 27 Nov 2016</p>
-							<a class="button">Buy Tickets</a>
+							<button tabindex="0" class="button">
+								Buy Tickets
+								<span class="visuallyhidden">New York at Fri 27 Nov 2016</span>
+							</button>
 						</div>
 					</div>
 					<div class="tile is-parent">
@@ -450,7 +457,10 @@
 							</div>
 							<p class="title">Los Angeles</p>
 							<p class="subtitle">Fri 27 Nov 2016</p>
-							<a class="button">Buy Tickets</a>
+							<button tabindex="0" class="button">
+								Buy Tickets
+								<span class="visuallyhidden">Los Angeles at Fri 27 Nov 2016</span>
+							</button>
 						</div>
 					</div>
 					<div class="tile is-parent">
@@ -460,7 +470,10 @@
 							</div>
 							<p class="title">Mexico</p>
 							<p class="subtitle">Fri 27 Nov 2016</p>
-							<a class="button">Buy Tickets</a>
+							<button tabindex="0" class="button">
+								Buy Tickets
+								<span class="visuallyhidden">Mexico at Fri 27 Nov 2016</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -473,7 +486,10 @@
 							</div>
 							<p class="title">Paris</p>
 							<p class="subtitle">Fri 27 Nov 2016</p>
-							<a class="button">Buy Tickets</a>
+							<button tabindex="0" class="button">
+								Buy Tickets
+								<span class="visuallyhidden">Paris at Fri 27 Nov 2016</span>
+							</button>
 						</div>
 					</div>
 					<div class="tile is-parent">
@@ -483,7 +499,10 @@
 							</div>
 							<p class="title">Minsk</p>
 							<p class="subtitle">Fri 27 Nov 2016</p>
-							<a class="button">Buy Tickets</a>
+							<button tabindex="0" class="button">
+								Buy Tickets
+								<span class="visuallyhidden">Minsk at Fri 27 Nov 2016</span>
+							</button>
 						</div>
 					</div>
 					<div class="tile is-parent">
@@ -493,7 +512,10 @@
 							</div>
 							<p class="title">London</p>
 							<p class="subtitle">Fri 27 Nov 2016</p>
-							<a class="button">Buy Tickets</a>
+							<button tabindex="0" class="button">
+								Buy Tickets
+								<span class="visuallyhidden">London at Fri 27 Nov 2016</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -508,41 +530,41 @@
 			<div class="container">
 				<div class="columns">
 					<div class="column">
-						<a class="box">
+						<button tabindex="0" class="box">
 							<div class="content">
 								<h3 class="title is-5">Front End Web Development</h3>
 								Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
 								Vue.js.
 							</div>
-						</a>
+						</button>
 					</div>
 					<div class="column">
-						<a class="box">
+						<button tabindex="0" class="box">
 							<div class="content">
 								<h3 class="title is-5">Back End Web Development</h3>
 								Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
 							</div>
-						</a>
+						</button>
 					</div>
 				</div>
 
 				<div class="columns">
 					<div class="column">
-						<a class="box">
+						<button tabindex="0" class="box">
 							<div class="content">
 								<h3 class="title is-5">Front End Web Development</h3>
 								Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
 								Vue.js.
 							</div>
-						</a>
+						</button>
 					</div>
 					<div class="column">
-						<a class="box">
+						<button tabindex="0" class="box">
 							<div class="content">
 								<h3 class="title is-5">Back End Web Development</h3>
 								Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
 							</div>
-						</a>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -576,8 +598,14 @@
 									</div>
 								</div>
 								<div class="card-footer">
-									<a class="card-footer-item">Preview</a>
-									<a class="card-footer-item">Source Code</a>
+									<button tabindex="0" class="card-footer-item">
+										Preview
+										<span class="visuallyhidden">Admin Light albom</span>
+									</button>
+									<button tabindex="0" class="card-footer-item">
+										Source Code
+										<span class="visuallyhidden">Admin Light</span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -601,8 +629,14 @@
 									</div>
 								</div>
 								<div class="card-footer">
-									<a class="card-footer-item">Preview</a>
-									<a class="card-footer-item">Source Code</a>
+									<button tabindex="0" class="card-footer-item">
+										Preview
+										<span class="visuallyhidden">Cards albom</span>
+									</button>
+									<button tabindex="0" class="card-footer-item">
+										Source Code
+										<span class="visuallyhidden">Cards</span>
+									</button>
 									</div>
 							</div>
 						</div>
@@ -626,8 +660,14 @@
 									</div>
 								</div>
 								<div class="card-footer">
-									<a class="card-footer-item">Preview</a>
-									<a class="card-footer-item">Source Code</a>
+									<button tabindex="0" class="card-footer-item">
+										Preview
+										<span class="visuallyhidden">Forum albom</span>
+									</button>
+									<button tabindex="0" class="card-footer-item">
+										Source Code
+										<span class="visuallyhidden">Forum</span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -653,8 +693,14 @@
 									</div>
 								</div>
 								<div class="card-footer">
-									<a class="card-footer-item">Preview</a>
-									<a class="card-footer-item">Source Code</a>
+									<button tabindex="0" class="card-footer-item">
+										Preview
+										<span class="visuallyhidden">Insta Album</span>
+									</button>
+									<button tabindex="0" class="card-footer-item">
+										Source Code
+										<span class="visuallyhidden">Insta Album</span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -678,8 +724,14 @@
 									</div>
 								</div>
 								<div class="card-footer">
-									<a class="card-footer-item">Preview</a>
-									<a class="card-footer-item">Source Code</a>
+									<button tabindex="0" class="card-footer-item">
+										Preview
+										<span class="visuallyhidden">Landing albom</span>
+									</button>
+									<button tabindex="0" class="card-footer-item">
+										Source Code
+										<span class="visuallyhidden">Landing</span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -703,8 +755,14 @@
 									</div>
 								</div>
 								<div class="card-footer">
-									<a class="card-footer-item">Preview</a>
-									<a class="card-footer-item">Source Code</a>
+									<button tabindex="0" class="card-footer-item">
+										Preview
+										<span class="visuallyhidden">Marketing albom</span>
+									</button>
+									<button tabindex="0" class="card-footer-item">
+										Source Code
+										<span class="visuallyhidden">Marketing</span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -723,7 +781,7 @@
 
 				<div class="columns">
 					<div class="column is-3">
-						<a class="button is-primary is-block is-alt is-large">New Post</a>
+						<button tabindex="0" class="button is-primary is-block is-alt is-large">New Post</button>
 						<div class="menu">
 							<ul class="menu-list forum-list">
 								<li><span class="tag is-primary is-medium">Dashboard</span></li>
@@ -1091,47 +1149,66 @@
         <div class="column is-3 is-offset-2">
           <h3 class="is-3 title"><b>Lessons</b></h3>
           <ul>
-            <li><a>Lorem ipsum dolor sit amet</a></li>
-            <li><a>Vestibulum errato isse</a></li>
-            <li><a>Lorem ipsum dolor sit amet</a></li>
-            <li><a>Aisia caisia</a></li>
-            <li><a>Murphy's law</a></li>
-            <li><a>Flimsy Lavenrock</a></li>
-            <li><a>Maven Mousie Lavender</a></li>
+            <li><a tabindex="0">Lorem ipsum dolor sit amet</a></li>
+            <li><a tabindex="0">Vestibulum errato isse</a></li>
+            <li><a tabindex="0">Lorem ipsum dolor sit amet</a></li>
+            <li><a tabindex="0">Aisia caisia</a></li>
+            <li><a tabindex="0">Murphy's law</a></li>
+            <li><a tabindex="0">Flimsy Lavenrock</a></li>
+            <li><a tabindex="0">Maven Mousie Lavender</a></li>
           </ul>
         </div>
         <div class="column is-3">
           <h3 class="is-3 title"><b>News</b></h3>
           <ul>
-            <li><a>Labore et dolore magna aliqua</a></li>
-            <li><a>Kanban airis sum eschelor</a></li>
-            <li><a>Modular modern free</a></li>
-            <li><a>The king of clubs</a></li>
-            <li><a>The Discovery Dissipation</a></li>
-            <li><a>Course Correction</a></li>
-            <li><a>Better Angels</a></li>
+            <li><a tabindex="0">Labore et dolore magna aliqua</a></li>
+            <li><a tabindex="0">Kanban airis sum eschelor</a></li>
+            <li><a tabindex="0">Modular modern free</a></li>
+            <li><a tabindex="0">The king of clubs</a></li>
+            <li><a tabindex="0">The Discovery Dissipation</a></li>
+            <li><a tabindex="0">Course Correction</a></li>
+            <li><a tabindex="0">Better Angels</a></li>
           </ul>
         </div>
         <div class="column is-4">
           <h3 class="is-3 title"><b>Help</b></h3>
           <ul>
-            <li><a>Objects in space</a></li>
-            <li><a>Playing cards with coyote</a></li>
-            <li><a>Goodbye Yellow Brick Road</a></li>
-            <li><a>The Garden of Forking Paths</a></li>
-            <li><a>Future Shock</a></li>
+            <li><a tabindex="0">Objects in space</a></li>
+            <li><a tabindex="0">Playing cards with coyote</a></li>
+            <li><a tabindex="0">Goodbye Yellow Brick Road</a></li>
+            <li><a tabindex="0">The Garden of Forking Paths</a></li>
+            <li><a tabindex="0">Future Shock</a></li>
           </ul>
         </div>
       </div>
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a><i class="fab fa-github-alt fa-2x"></i></a>
-          <a><i class="fab fa-youtube fa-2x"></i></a>
-          <a><i class="fab fa-facebook fa-2x"></i></a>
-          <a><i class="fab fa-twitter fa-2x"></i></a>
+          <a tabindex="0">
+						<i class="fab fa-github-alt fa-2x"></i>
+						<span class="visuallyhidden">Visit our github. Link will open an external website in a new tab.</span>
+					</a>
+          <a tabindex="0">
+						<i class="fab fa-youtube fa-2x"></i>
+						<span class="visuallyhidden">Visit our youtube channel. Link will open an external website in a new tab.</span>
+					</a>
+          <a tabindex="0">
+						<i class="fab fa-facebook fa-2x"></i>
+						<span class="visuallyhidden">Visit our facebook. Link will open an external website in a new tab.</span>
+					</a>
+          <a tabindex="0">
+						<i class="fab fa-twitter fa-2x"></i>
+						<span class="visuallyhidden">Visit our twitter. Link will open an external website in a new tab.</span>
+					</a>
         </div>
-        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+        <p>
+					The source code is licensed 
+					<a target="_blank" href="http://opensource.org/licenses/mit-license.php">
+						MIT 
+						<span class="visuallyhidden">Opens an external website in a new tab.</span>
+						<i class="fa fa-external-link-alt"></i> 
+					</a>
+				</p>
       </div>
     </div>
 		<div id="modal-card" class="modal modal-fx-3dSlit">

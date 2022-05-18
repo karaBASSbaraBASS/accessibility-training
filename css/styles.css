@@ -13,23 +13,39 @@
 	height: auto;
 	width: auto;
 }
+
 .tag:not(body).is-danger{
 	background-color: #EB0000 !important;
 }
 
+.button.is-primary.is-large{
+	width: 100%;
+}
+
 /* *:focus {
 	outline: 2px dashed red!important;
-	border-radius: 2px;
+	border-radius: 2px;4
 } */		
 button:focus,
+input[type=checkbox]:focus,
+input[type=radio]:focus,
 input[type=submit]:focus {
 	box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #1274C4 !important;
 	outline: none;
 }
+
 *:focus-visible,
 input:focus{
 	box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #1274C4 !important;
 	border-radius: 5px;
+	outline: #1274C4 solid 3px;
+}
+a:focus-visible{
+	outline: none;
+}
+
+.fa-external-link-alt{
+	outline: none!important;
 }
 
 .skip-link {
@@ -46,6 +62,7 @@ input:focus{
 .skip-link:focus {
 	top: 0;
 }
+
 .content pre{
 	overflow-x: scroll;
 }
@@ -81,33 +98,41 @@ li.radio[checked]::after {
 	top: 5px;
 	border-radius: 50%;
 }
+
 /* color correction */
 .hero.is-info,
 .button.is-info {
 	background-color: #0A5A8F !important;
 }
+
 .hero.is-info .tabs.is-boxed li.is-active a,
 .hero.is-info .tabs.is-boxed li.is-active a:hover,
 .hero.is-info .tabs.is-toggle li.is-active a,
 .hero.is-info .tabs.is-toggle li.is-active a:hover{
 	color: #0A5A8F !important;
 }
+
 .hero.is-info .subtitle,
 .hero-body .subtitle {
 	color: #ffffff !important;
 }
+
 .subtitle {
 	color: #292929 !important;
 }
+
 .has-text-grey-light {
 	color: #595959 !important;
 }
+
 .tag:not(body).is-danger {
 	background-color: red;
 }
+
 .help.is-danger {
 	color: #B30000;
 }
+
 .tag:not(body).is-primary {
 	color: #000000;
 	background-color: #00D1B2;
@@ -119,14 +144,40 @@ li.radio[checked]::after {
 .help.is-success {
 	color: #0C642E;
 }
+
 a {
 	color: #1D53AA;
 }
+
 fieldset {
 	border-radius: 6px;
 }
+
 .no-border{
 	border: none;
+}
+
+.box .content{
+	text-align: left;
+	font-size: 1rem;
+}
+
+button.card-footer-item{
+	font-size: 1rem;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	border-left: none;
+	background-color: white;
+	transition: all linear 0.2s;
+}
+button.card-footer-item:hover,
+button.card-footer-item:focus{
+	background-color: #dbdbdb;
+}
+
+button.card-footer-item:nth-child(odd){
+	border-right: 1px solid #dbdbdb !important;
 }
 
 
