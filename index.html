@@ -26,10 +26,12 @@
               <span></span>
             </span>
           </div>
-					<a href="#maincontent" class="skip-link">
-						Skip to the main content
+					<div class="skip-to">
+						<a href="#maincontent" class="skip-link">
+							Skip to the main content
+						</a>
 						<span class="visuallyhidden">Focus on the first article by skipping the navigation.</span>
-					</a>
+					</div>
           <div id="navbarMenu" class="navbar-menu">
             <nav class="navbar-end">
               <span class="navbar-item">
@@ -82,10 +84,7 @@
 							<legend class="visuallyhidden">You can enter email address for email subscribtion and click "Notify Me" button.</legend>
               <label for="emailInput" class="control is-expanded visuallyhidden">Enter your email</label>
               <input aria-labelledby="subscribtion" name="emailInput" id="emailInput">
-							
-              <label for="emailSubmit" class="control visuallyhidden">Press button to send email</label>
-              <button aria-labelledby="subscribtion" id="emailSubmit" type="submit" class="button is-info">Notify Me</button>
-              
+              <button aria-labelledby="subscribtion" id="subscribeButton" name="subscribeButton" type="submit" class="button is-info">Notify Me</button>
             </fieldset>
           </form>
         </div>
@@ -93,6 +92,14 @@
     </section>
   </header>
 	<main id="maincontent">
+		<div id="crumbs_frame" class="container" aria-label="breadcrumbs">
+			<ul class="bct">
+				<!-- .bct / Breadcrumbs -->
+				<li><a href="/">W3C</a><span class="cr">»</span></li>
+				<li><a href="/Consortium/">Test page</a><span class="cr">»</span></li>
+				<li><a href="" class="current" aria-current="page">About Us</a></li>
+			</ul>
+		</div>
 		<article class="section" id="about">
 			<section class="section-heading has-text-centered">
 				<h2 class="title is-2">About Us</h2>
@@ -107,7 +114,7 @@
 				</div>
 			</section>
 
-			<section class="content container">
+			<section id="maincontent" class="content container">
 				<section>
 					<h1 class="is-1 title">Hello World</h1>
 					<p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
@@ -1001,11 +1008,10 @@
 							<div class="control">
 								<label for="agreeCheckbox" class="checkbox">
 									<input id="agreeCheckbox" type="checkbox">
-									I agree to the <a>terms and conditions</a>
+									I agree to the <a tabindex="0">terms and conditions</a>
 								</label>
 							</div>
 						</div>
-						
 
 						<fieldset class="field welcomeDrink no-border">
 							<legend class="visuallyhidden">Do you want a welcome drink?</legend>
@@ -1246,7 +1252,7 @@
 					</div>
 				</div>
 			</div>
-			<button class="modal-close is-large" value="close modal"></button>
+			<button class="modal-close is-large" value="close modal">x</button>
 		</div>
 		
 		<div id="modal-image1" class="modal modal-fx-3dSlit">
@@ -1254,7 +1260,7 @@
 			<div class="modal-content is-huge is-image">
 				<img alt="modal random image 1" src="https://source.unsplash.com/random/?sig=1">
 			</div>
-			<button class="modal-close is-large" value="close modal"></button>
+			<button class="modal-close is-large" value="close modal">x</button>
 		</div>
 		
 		<div id="modal-image2" class="modal modal-fx-superScaled">
@@ -1262,7 +1268,7 @@
 			<div class="modal-content  is-image">
 				<img alt="modal random image 2" src="https://source.unsplash.com/random/?sig=3">
 			</div>
-			<button class="modal-close is-large" value="close modal"></button>
+			<button class="modal-close is-large" value="close modal">x</button>
 		</div>
   </footer>
 
