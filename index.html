@@ -20,14 +20,17 @@
             <a class="navbar-item logo-link">
               <img alt="EPAM Systems logotype" src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
+						<span class="navbar-burger burger" data-target="navbarMenu">
+							<button class='burger-hidden' type="button" tabindex="0">Click here to open the menu</button>
+							<nav id="navigation">
+								<span></span>
+								<span></span>
+								<span></span>
+							</nav>
+						</span>
           </div>
 					<div class="skip-to">
-						<a href="#maincontent" class="skip-link">
+						<a href="#mainsection">
 							Skip to the main content
 						</a>
 						<span class="visuallyhidden">Focus on the first article by skipping the navigation.</span>
@@ -79,7 +82,7 @@
           <h2 id="subscribtion" class="subtitle has-text-white">
             Would you like to get the latest news?
 					</h2>
-          <form aria-labelledby="subscribtion" class="box">
+          <form aria-labelledby="subscribtion" class="box no-border">
             <fieldset class="field is-grouped">
 							<legend class="visuallyhidden">You can enter email address for email subscribtion and click "Notify Me" button.</legend>
               <label for="emailInput" class="control is-expanded visuallyhidden">Enter your email</label>
@@ -95,9 +98,9 @@
 		<div id="crumbs_frame" class="container" aria-label="breadcrumbs">
 			<ul class="bct">
 				<!-- .bct / Breadcrumbs -->
-				<li><a href="/">W3C</a><span class="cr">»</span></li>
-				<li><a href="/Consortium/">Test page</a><span class="cr">»</span></li>
-				<li><a href="" class="current" aria-current="page">About Us</a></li>
+				<li><a href="./">MainPage</a><span class="cr">»</span></li>
+				<li><a href="index.html#nav">Pictures</a><span class="cr">»</span></li>
+				<li><a href="index.html#Services" class="current" aria-current="page">Services</a></li>
 			</ul>
 		</div>
 		<article class="section" id="about">
@@ -114,7 +117,7 @@
 				</div>
 			</section>
 
-			<section id="maincontent" class="content container">
+			<section id="mainsection" class="content container">
 				<section>
 					<h1 class="is-1 title">Hello World</h1>
 					<p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
