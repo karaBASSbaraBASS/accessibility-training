@@ -17,9 +17,15 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo-link">
+            <a class="navbar-item logo-link" tabindex="1">
               <img alt="EPAM Systems logotype" src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg">
             </a>
+						<div class="skip-to">
+							<a href="#mainsection">
+								Skip to the main content
+							</a>
+							<span class="visuallyhidden">Focus on the first article by skipping the navigation.</span>
+						</div>
 						<span class="navbar-burger burger" data-target="navbarMenu">
 							<button class='burger-hidden' type="button" tabindex="0">Click here to open the menu</button>
 							<nav id="navigation">
@@ -29,12 +35,6 @@
 							</nav>
 						</span>
           </div>
-					<div class="skip-to">
-						<a href="#mainsection">
-							Skip to the main content
-						</a>
-						<span class="visuallyhidden">Focus on the first article by skipping the navigation.</span>
-					</div>
           <div id="navbarMenu" class="navbar-menu">
             <nav class="navbar-end">
               <span class="navbar-item">
@@ -120,7 +120,7 @@
 			<section id="mainsection" class="content container">
 				<section>
 					<h1 class="is-1 title">Hello World</h1>
-					<p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+					<p>Lorem ipsum<sup><a tabindex="0">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
 				</section>
 				<section>
 					<h2 class="is-2 title">Second level</h2>
@@ -134,7 +134,7 @@
 				</section>
 				<section>
 					<h3 class="is-3 title">Third level</h3>
-					<p>Quisque ante lacus, malesuada ac auctor vitae, congue <a>non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+					<p>Quisque ante lacus, malesuada ac auctor vitae, congue <a tabindex="0">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
 					<ol class="ol-list">
 						<li>Donec blandit a lorem id convallis.</li>
 						<li>Cras gravida arcu at diam gravida gravida.</li>
@@ -287,19 +287,19 @@
 			</div>
 			<div class="tabs is-boxed is-centered main-menu" id="nav">
 				<ul>
-					<li data-target="pane-1" id="1" class="is-active">
+					<li data-target="pane-1" id="1" class="is-active" tabindex="0">
 						<a>
 							<span class="icon is-small"><i class="fa fa-image"></i></span>
 							<span>Pictures</span>
 						</a>
 					</li>
-					<li data-target="pane-3" id="3">
+					<li data-target="pane-3" id="3" tabindex="0">
 						<a>
 							<span class="icon is-small"><i class="fab fa-superpowers"></i></span>
 							<span>Team</span>
 						</a>
 					</li>
-					<li data-target="pane-4" id="4">
+					<li data-target="pane-4" id="4" tabindex="0">
 						<a>
 							<span class="icon is-small"><i class="fa fa-film"></i></span>
 							<span>Video</span>
@@ -376,7 +376,7 @@
 							<div class="media-content">
 								<div class="content">
 									<p>
-										<a><b>Dominic Ipsum</b></a>
+										<a tabindex="0"><b>Dominic Ipsum</b></a>
 										<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 									</p>
 								</div>
@@ -389,7 +389,7 @@
 							<div class="media-content">
 								<div class="content">
 									<p>
-										<a><b>Cassie Ipsum</b></a>
+										<a tabindex="0"><b>Cassie Ipsum</b></a>
 										<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 									</p>
 								</div>
@@ -404,7 +404,7 @@
 							<div class="media-content">
 								<div class="content">
 									<p>
-										<a><b>Avery Ipsum</b></a>
+										<a tabindex="0"><b>Avery Ipsum</b></a>
 										<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 									</p>
 								</div>
@@ -417,7 +417,7 @@
 							<div class="media-content">
 								<div class="content">
 									<p>
-										<a><b>io Ipsum</b></a>
+										<a tabindex="0"><b>io Ipsum</b></a>
 										<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 									</p>
 								</div>
@@ -594,7 +594,7 @@
 									<p class="card-header-title">
 										<span>Admin <small>(Light)</small></span>
 										<span class="is-pulled-right">
-											<a>
+											<a tabindex="0">
 												<span class="tag is-default">v0.7.2</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
@@ -625,7 +625,7 @@
 									<p class="card-header-title">
 										<span>Cards</span>
 										<span class="is-pulled-right">
-											<a>
+											<a tabindex="0">
 												<span class="tag is-default">v0.7.2</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
@@ -656,7 +656,7 @@
 									<p class="card-header-title">
 										<span>Forum</span>
 										<span class="is-pulled-right">
-											<a>
+											<a tabindex="0">
 												<span class="tag is-default">v0.7.2</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
@@ -689,7 +689,7 @@
 									<p class="card-header-title">
 										<span>InstaAlbum</span>
 										<span class="is-pulled-right">
-											<a>
+											<a tabindex="0">
 												<span class="tag is-default">v0.7.2</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
@@ -720,7 +720,7 @@
 									<p class="card-header-title">
 										<span>Landing</span>
 										<span class="is-pulled-right">
-											<a>
+											<a tabindex="0">
 												<span class="tag is-default">v0.7.2</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
@@ -751,7 +751,7 @@
 									<p class="card-header-title">
 										<span>Marketing</span>
 										<span class="is-pulled-right">
-											<a>
+											<a tabindex="0">
 												<span class="tag is-default">v0.7.2</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
@@ -817,7 +817,7 @@
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a>@jsmith</a> replied 34 minutes ago &nbsp;
+												<a tabindex="0">@jsmith</a> replied 34 minutes ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
@@ -839,7 +839,7 @@
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a>@red</a> replied 40 minutes ago &nbsp;
+												<a tabindex="0">@red</a> replied 40 minutes ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
@@ -861,7 +861,7 @@
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a>@jsmith</a> replied 53 minutes ago &nbsp;
+												<a tabindex="0">@jsmith</a> replied 53 minutes ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
@@ -883,7 +883,7 @@
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a>@brown</a> replied 3 hours ago &nbsp;
+												<a tabindex="0">@brown</a> replied 3 hours ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
@@ -905,7 +905,7 @@
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a>@hamburgler</a> replied 5 hours ago &nbsp;
+												<a tabindex="0">@hamburgler</a> replied 5 hours ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
@@ -927,7 +927,7 @@
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a>@rapper</a> replied 3 hours ago &nbsp;
+												<a tabindex="0">@rapper</a> replied 3 hours ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
@@ -1246,9 +1246,9 @@
             Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
             Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
             nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-							<a>@testio</a>.
-							<a>#css</a>
-							<a>#responsive</a>
+							<a tabindex="0">@testio</a>.
+							<a tabindex="0">#css</a>
+							<a tabindex="0">#responsive</a>
 							<br>
 							<time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
 						</div>

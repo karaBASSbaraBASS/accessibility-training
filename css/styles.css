@@ -8,6 +8,19 @@
 	border: 0;
 }
 
+#navigation span{
+	background-color: white !important;
+}
+
+.burger-hidden {
+	border: 0;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	color: transparent;
+	background-color: transparent;
+}
+
 .visuallyhidden:focus {
 	clip: auto;
 	height: auto;
