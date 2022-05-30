@@ -35,10 +35,16 @@
 							</nav>
 						</span>
           </div>
+					<div class="skip-to">
+						<a href="#mainsection" aria-describedby="skipButtonDescription">
+							Skip to the main content
+						</a>
+						<span id="skipButtonDescription" class="visuallyhidden">afret click it will focus on the first article on the page</span>
+					</div>
           <div id="navbarMenu" class="navbar-menu">
             <nav class="navbar-end">
               <span class="navbar-item">
-                <button class="button is-white is-outlined">
+                <button class="button is-white is-outlined" aria-label="go to the home page">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
@@ -46,7 +52,7 @@
                 </button>
               </span>
               <span class="navbar-item">
-                <button class="button is-white is-outlined">
+                <button class="button is-white is-outlined" aria-label="go to the examples page">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
@@ -54,7 +60,7 @@
                 </button>
               </span>
               <span class="navbar-item">
-                <button class="button is-white is-outlined">
+                <button class="button is-white is-outlined" aria-label="go to the documentation page">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
@@ -62,7 +68,7 @@
                 </button>
               </span>
               <span class="navbar-item">
-                <button class="button is-white is-outlined">
+                <button class="button is-white is-outlined" aria-label="go to the View Source page">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -75,7 +81,7 @@
       </div>
     </div>
 
-    <section class="hero-body">
+    <section class="hero-body" aria-label="Subscribtion">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <h1 class="title has-text-white">We have web accessibility in mind</h1>
@@ -98,13 +104,13 @@
 		<div id="crumbs_frame" class="container" aria-label="breadcrumbs">
 			<ul class="bct">
 				<!-- .bct / Breadcrumbs -->
-				<li><a href="./">MainPage</a><span class="cr">»</span></li>
-				<li><a href="index.html#nav">Pictures</a><span class="cr">»</span></li>
-				<li><a href="index.html#Services" class="current" aria-current="page">Services</a></li>
+				<li><a href="./" aria-label="breadcrumbs to main page">MainPage</a><span class="cr">»</span></li>
+				<li><a href="index.html#nav" aria-label="breadcrumbs to pictures">Pictures</a><span class="cr">»</span></li>
+				<li><a href="index.html#Services" class="current" aria-current="page" aria-label="breadcrumbs to services">Services</a></li>
 			</ul>
 		</div>
 		<article class="section" id="about">
-			<section class="section-heading has-text-centered">
+			<section class="section-heading has-text-centered" aria-label="About us">
 				<h2 class="title is-2">About Us</h2>
 				<h3 class="subtitle is-5">We of all trades, master of "some"</h3>
 				<div class="container">
@@ -117,12 +123,12 @@
 				</div>
 			</section>
 
-			<section id="mainsection" class="content container">
-				<section>
+			<div id="mainsection" class="content container">
+				<section aria-label="Hello World">
 					<h1 class="is-1 title">Hello World</h1>
 					<p>Lorem ipsum<sup><a tabindex="0">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
 				</section>
-				<section>
+				<section aria-label="Second level">
 					<h2 class="is-2 title">Second level</h2>
 					<p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
 					<ul>
@@ -132,7 +138,7 @@
 						<li>- Ut non enim metus.</li>
 					</ul>
 				</section>
-				<section>
+				<section aria-label="Third level">
 					<h3 class="is-3 title">Third level</h3>
 					<p>Quisque ante lacus, malesuada ac auctor vitae, congue <a tabindex="0">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
 					<ol class="ol-list">
@@ -157,10 +163,10 @@
 					</dl>
 					<p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
 				</section>
-				<section>
+				<section aria-label="Fourth level">
 					<h4 class="is-4 title">Fourth level</h4>
 					<p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
-					<pre tabindex="0">
+					<pre tabindex="0" aria-label="example of webpage layout">
 							&lt;!DOCTYPE html&gt;
 							&lt;html&gt;
 									&lt;head&gt;
@@ -202,7 +208,7 @@
 					</table>
 					<p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
 				</section>
-				<section>
+				<section aria-label="Fifth level">
 					<h3 class="is-5 title">Fifth level</h3>
 					<p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
 					<figure>
@@ -214,14 +220,14 @@
 						</figcaption>
 					</figure>
 				</section>
-				<section>
+				<section aria-label="Sixth level">
 					<h4 class="is-6 title">Sixth level</h4>
 					<p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
 				</section>
-			</section>
+			</div>
 		</article>
 
-		<div class="hero has-background-grey-light">
+		<section class="hero has-background-grey-light" aria-label="Three key features">
 			<div class="container features">
 				<div class="section-heading has-text-centered">
 					<h2 class="title is-2">Three key features</h2>
@@ -238,7 +244,7 @@
 								<div class="content">
 									<div>Tristique senectus et netus et.</div>
 									<p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-									<p><a tabindex="0">Learn more</a></p>
+									<p><a tabindex="0" aria-label="first key feature">Learn more</a></p>
 								</div>
 							</div>
 						</div>
@@ -254,7 +260,7 @@
 									<div>Tempor orci dapibus ultrices in.</div>
 									<p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
 										sed risus.</p>
-									<p><a tabindex="0">Learn more</a></p>
+									<p><a tabindex="0" aria-label="second key feature">Learn more</a></p>
 								</div>
 							</div>
 						</div>
@@ -269,14 +275,14 @@
 								<div class="content">
 									<div> Leo integer malesuada nunc vel risus. </div>
 									<p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-									<p><a tabindex="0">Learn more</a></p>
+									<p><a tabindex="0" aria-label="third key feature">Learn more</a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<div class="hero is-info">
 			<div class="hero-body">
@@ -439,7 +445,7 @@
 			</div>
 		</div>
 
-		<div class="section has-background-grey-lighter">
+		<section class="section has-background-grey-lighter" aria-label="Upcoming events">
 			<div class="container has-text-centered">
 					<div class="section-heading has-text-centered">
 						<h2 class="title is-2">Upcoming events</h2>
@@ -530,9 +536,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="section">
+		<section class="section" aria-label="Our services">
 			<div class="section-heading has-text-centered">
 				<h2 id="Services" class="title is-2">Services</h2>
 				<h3 class="subtitle is-5">What can I do for you?</h3>
@@ -578,9 +584,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="section has-background-grey-lighter">
+		<section class="section has-background-grey-lighter" aria-label="Photos from the past event">
 			<div class="container">
 				<div class="section-heading has-text-centered">
 					<h2 class="title is-2">Photos from past events</h2>
@@ -780,9 +786,9 @@
 				</div>
 			</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="section">
+		<section class="section" aria-label="Forum">
 			<div class="container">
 				<div class="section-heading has-text-centered">
 					<h2 id="Forum" class="title is-2">Forum</h2>
@@ -941,9 +947,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="section has-background-light">
+		<section class="section has-background-light" aria-label="Contuct us">
 			<div class="container">
 				<div class="section-heading has-text-centered">
 					<h2 class="title is-2">Contact us</h2>
@@ -1041,7 +1047,7 @@
 					</fieldset>
 				</form>
 			</div>
-		</div>
+		</section>
 
   <!-- <div class="section">
     <div class="container">
@@ -1155,7 +1161,7 @@
   <footer class="footer" aria-label="footer">
     <div class="container">
       <div class="columns">
-        <div class="column is-3 is-offset-2">
+        <section class="column is-3 is-offset-2" aria-label="list of Lessons">
           <h3 class="is-3 title"><b>Lessons</b></h3>
           <ul>
             <li><a tabindex="0">Lorem ipsum dolor sit amet</a></li>
@@ -1166,8 +1172,8 @@
             <li><a tabindex="0">Flimsy Lavenrock</a></li>
             <li><a tabindex="0">Maven Mousie Lavender</a></li>
           </ul>
-        </div>
-        <div class="column is-3">
+        </section>
+        <section class="column is-3" aria-label="list of news">
           <h3 class="is-3 title"><b>News</b></h3>
           <ul>
             <li><a tabindex="0">Labore et dolore magna aliqua</a></li>
@@ -1178,8 +1184,8 @@
             <li><a tabindex="0">Course Correction</a></li>
             <li><a tabindex="0">Better Angels</a></li>
           </ul>
-        </div>
-        <div class="column is-4">
+        </section>
+        <section class="column is-4" aria-label="list of help articles">
           <h3 class="is-3 title"><b>Help</b></h3>
           <ul>
             <li><a tabindex="0">Objects in space</a></li>
@@ -1188,7 +1194,7 @@
             <li><a tabindex="0">The Garden of Forking Paths</a></li>
             <li><a tabindex="0">Future Shock</a></li>
           </ul>
-        </div>
+        </section>
       </div>
 
       <div class="content has-text-centered">
