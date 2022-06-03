@@ -19,9 +19,11 @@ function toggleTab(selectedNav, targetId) {
   navEls.forEach(function (navEl) {
     if (navEl.id == selectedNav) {
       navEl.classList.add("is-active");
+      navEl.setAttribute("aria-expanded", "true");
     } else {
       if (navEl.classList.contains("is-active")) {
         navEl.classList.remove("is-active");
+        navEl.setAttribute("aria-expanded", "false");
       }
     }
   });
@@ -31,17 +33,20 @@ function toggleTab(selectedNav, targetId) {
   tabs.forEach(function (tab) {
     if (tab.id == targetId) {
       tab.style.display = "block";
+      tab.setAttribute("aria-expanded", "true");
     } else {
       tab.style.display = "none";
+      tab.setAttribute("aria-expanded", "false");
     }
   });
 }
-// const skipLink = document.querySelector(".skip-link");
-// const skipList = document.querySelector(".skip-list");
 
-// skipLink.addEventListener("click", (event) => {
-//   skipLink.textContent = `Click count: ${event.detail}`;
-//   skipList.classList.add("active");
-//   skipList.setAttribute("tabindex", "2");
-//   //element.classList.remove("my-class");
-// });
+function messageUpdater() {
+  let messageBlock = document.querySelector(".warning");
+  let counter = 1;
+  counter = counter++;
+  messageBlock.value = `You have stared into the abyss for more than ${counter} minute, and now the abyss is staring into you.`;
+  console.log("1 minute gone");
+}
+
+setInterval(messageUpdater, 60000);

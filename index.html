@@ -17,16 +17,16 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo-link" tabindex="1">
+            <a class="navbar-item logo-link" tabindex="0">
               <img alt="EPAM Systems logotype" src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg">
             </a>
 						<div class="skip-to">
 							<a href="#mainsection">
 								Skip to the main content
 							</a>
-							<span class="visuallyhidden">Focus on the first article by skipping the navigation.</span>
+							<span class="visuallyhidden">&nbsp;Focus on the first article by skipping the navigation.</span>
 						</div>
-						<span class="navbar-burger burger" data-target="navbarMenu">
+						<span class="navbar-burger burger" data-target="navbarMenu" role="navigation" aria-haspopup="menu">
 							<button class='burger-hidden' type="button" tabindex="0">Click here to open the menu</button>
 							<nav id="navigation">
 								<span></span>
@@ -35,18 +35,12 @@
 							</nav>
 						</span>
           </div>
-					<div class="skip-to">
-						<a href="#mainsection" aria-describedby="skipButtonDescription">
-							Skip to the main content
-						</a>
-						<span id="skipButtonDescription" class="visuallyhidden">afret click it will focus on the first article on the page</span>
-					</div>
-          <div id="navbarMenu" class="navbar-menu">
+          <div id="navbarMenu" class="navbar-menu" role="navigation">
             <nav class="navbar-end">
               <span class="navbar-item">
                 <button class="button is-white is-outlined" aria-label="go to the home page">
                   <span class="icon">
-                    <i class="fa fa-home"></i>
+                    <i aria-hidden="true" class="fa fa-home" aria-hidden="true"></i>
                   </span>
                   <span>Home</span>
                 </button>
@@ -54,7 +48,7 @@
               <span class="navbar-item">
                 <button class="button is-white is-outlined" aria-label="go to the examples page">
                   <span class="icon">
-                    <i class="fab fa-superpowers"></i>
+                    <i aria-hidden="true" class="fab fa-superpowers" aria-hidden="true"></i>
                   </span>
                   <span>Examples</span>
                 </button>
@@ -62,7 +56,7 @@
               <span class="navbar-item">
                 <button class="button is-white is-outlined" aria-label="go to the documentation page">
                   <span class="icon">
-                    <i class="fa fa-book"></i>
+                    <i aria-hidden="true" class="fa fa-book" aria-hidden="true"></i>
                   </span>
                   <span>Documentation</span>
                 </button>
@@ -70,7 +64,7 @@
               <span class="navbar-item">
                 <button class="button is-white is-outlined" aria-label="go to the View Source page">
                   <span class="icon">
-                    <i class="fab fa-github"></i>
+                    <i aria-hidden="true" class="fab fa-github" aria-hidden="true"></i>
                   </span>
                   <span>View Source</span>
                 </button>
@@ -81,13 +75,13 @@
       </div>
     </div>
 
-    <section class="hero-body" aria-label="Subscribtion">
+    <section class="hero-body" aria-label="Subscribtion" role="banner">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <h1 class="title has-text-white">We have web accessibility in mind</h1>
-          <h2 id="subscribtion" class="subtitle has-text-white">
+          <h2 class="title has-text-white">We have web accessibility in mind</h2>
+          <p id="subscribtion" class="subtitle has-text-white">
             Would you like to get the latest news?
-					</h2>
+					</p>
           <form aria-labelledby="subscribtion" class="box no-border">
             <fieldset class="field is-grouped">
 							<legend class="visuallyhidden">You can enter email address for email subscribtion and click "Notify Me" button.</legend>
@@ -100,7 +94,7 @@
       </div>
     </section>
   </header>
-	<main id="maincontent">
+	<main id="maincontent" role="main">
 		<div id="crumbs_frame" class="container" aria-label="breadcrumbs">
 			<ul class="bct">
 				<!-- .bct / Breadcrumbs -->
@@ -111,8 +105,8 @@
 		</div>
 		<article class="section" id="about">
 			<section class="section-heading has-text-centered" aria-label="About us">
-				<h2 class="title is-2">About Us</h2>
-				<h3 class="subtitle is-5">We of all trades, master of "some"</h3>
+				<h1 class="title is-2">About Us</h1>
+				<h2 class="subtitle is-5">We of all trades, master of "some"</h2>
 				<div class="container">
 					<p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
 						field of
@@ -125,8 +119,8 @@
 
 			<div id="mainsection" class="content container">
 				<section aria-label="Hello World">
-					<h1 class="is-1 title">Hello World</h1>
-					<p>Lorem ipsum<sup><a tabindex="0">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+					<h2 class="is-1 title">Hello World</h2>
+					<p>Lorem ipsum<sup><a tabindex="0" role="link">[1]<span class="visuallyhidden">&nbsp;footnote in dictionary</span></a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
 				</section>
 				<section aria-label="Second level">
 					<h2 class="is-2 title">Second level</h2>
@@ -140,7 +134,7 @@
 				</section>
 				<section aria-label="Third level">
 					<h3 class="is-3 title">Third level</h3>
-					<p>Quisque ante lacus, malesuada ac auctor vitae, congue <a tabindex="0">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+					<p>Quisque ante lacus, malesuada ac auctor vitae, congue <a tabindex="0" role="link">non ante<span class="visuallyhidden">&nbsp;read more</span></a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
 					<ol class="ol-list">
 						<li>Donec blandit a lorem id convallis.</li>
 						<li>Cras gravida arcu at diam gravida gravida.</li>
@@ -179,11 +173,11 @@
 							&lt;/html&gt;
 							</pre>
 					<p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
-					<table>
+					<table role="grid">
 						<caption>Test table caption</caption>
 						<tr>
-							<th scope="col" id="column1">Header</th>
-							<th scope="col" id="column2">Header</th>
+							<th scope="col" id="column1" role="columnheader">Header</th>
+							<th scope="col" id="column2" role="columnheader">Header</th>
 						</tr>
 						<tr>
 							<td headers="column1">cell</td>
@@ -209,7 +203,7 @@
 					<p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
 				</section>
 				<section aria-label="Fifth level">
-					<h3 class="is-5 title">Fifth level</h3>
+					<h5 class="is-5 title">Fifth level</h5>
 					<p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
 					<figure>
 						<img alt="picture autumn forest" src="./img/photo-1572958731731-2b7fdb0a9818.jpg">
@@ -221,7 +215,7 @@
 					</figure>
 				</section>
 				<section aria-label="Sixth level">
-					<h4 class="is-6 title">Sixth level</h4>
+					<h6 class="is-6 title">Sixth level</h6>
 					<p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
 				</section>
 			</div>
@@ -238,13 +232,13 @@
 					<div class="column is-4">
 						<div class="card is-shady">
 							<div class="card-image has-text-centered">
-								<i class="fa fa-paw"></i>
+								<i aria-hidden="true" class="fa fa-paw" aria-hidden="true"></i>
 							</div>
 							<div class="card-content">
 								<div class="content">
 									<div>Tristique senectus et netus et.</div>
 									<p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-									<p><a tabindex="0" aria-label="first key feature">Learn more</a></p>
+									<p><a tabindex="0" role="link" aria-label="first key feature">Learn more</a></p>
 								</div>
 							</div>
 						</div>
@@ -253,14 +247,14 @@
 					<div class="column is-4">
 						<div class="card is-shady">
 							<div class="card-image has-text-centered">
-								<i class="fab fa-empire"></i>
+								<i aria-hidden="true" class="fab fa-empire"></i>
 							</div>
 							<div class="card-content">
 								<div class="content">
 									<div>Tempor orci dapibus ultrices in.</div>
 									<p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
 										sed risus.</p>
-									<p><a tabindex="0" aria-label="second key feature">Learn more</a></p>
+									<p><a tabindex="0" role="link" aria-label="second key feature">Learn more</a></p>
 								</div>
 							</div>
 						</div>
@@ -269,13 +263,13 @@
 					<div class="column is-4">
 						<div class="card is-shady">
 							<div class="card-image has-text-centered">
-								<i class="fab fa-apple"></i>
+								<i aria-hidden="true" class="fab fa-apple"></i>
 							</div>
 							<div class="card-content">
 								<div class="content">
 									<div> Leo integer malesuada nunc vel risus. </div>
 									<p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-									<p><a tabindex="0" aria-label="third key feature">Learn more</a></p>
+									<p><a tabindex="0" role="link" aria-label="third key feature">Learn more</a></p>
 								</div>
 							</div>
 						</div>
@@ -292,22 +286,22 @@
 				</div>
 			</div>
 			<div class="tabs is-boxed is-centered main-menu" id="nav">
-				<ul>
-					<li data-target="pane-1" id="1" class="is-active" tabindex="0">
-						<a>
-							<span class="icon is-small"><i class="fa fa-image"></i></span>
+				<ul role="tablist">
+					<li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab" aria-expanded="true" aria-selected="true">
+						<a role="button">
+							<span class="icon is-small"><i aria-hidden="true" class="fa fa-image"></i></span>
 							<span>Pictures</span>
 						</a>
 					</li>
-					<li data-target="pane-3" id="3" tabindex="0">
-						<a>
-							<span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+					<li data-target="pane-3" id="3" tabindex="0" role="tab" aria-expanded="false" aria-selected="false">
+						<a role="button">
+							<span class="icon is-small"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
 							<span>Team</span>
 						</a>
 					</li>
-					<li data-target="pane-4" id="4" tabindex="0">
-						<a>
-							<span class="icon is-small"><i class="fa fa-film"></i></span>
+					<li data-target="pane-4" id="4" tabindex="0" role="tab" aria-expanded="false" aria-selected="false">
+						<a role="button">
+							<span class="icon is-small"><i aria-hidden="true" class="fa fa-film"></i></span>
 							<span>Video</span>
 						</a>
 					</li>
@@ -316,7 +310,7 @@
 		</div>
 
 		<div class="tab-content container">
-			<div class="tab-pane is-active" id="pane-1" class="level">
+			<div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-expanded="true">
 				<div class="container">
 					<div class="columns features">
 						<div class="column is-4">
@@ -328,9 +322,16 @@
 								</div>
 								<div class="card-content">
 									<div class="content">
-										<div>Click on image above</div>
+										<div role="text">Click on image above</div>
 										<p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-										<span class="button is-link modal-button" data-target="modal-image1">Image modal</span>
+										<span class="button is-link modal-button" 
+										data-target="modal-image1" 
+										tabindex="0" 
+										role="button" 
+										aria-controls="modal-image1" >
+											Image modal
+											<span class="visuallyhidden">&nbsp;click to open window</span>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -344,10 +345,17 @@
 								</div>
 								<div class="card-content">
 									<div class="content">
-										<div>Tempor orci dapibus ultrices in.</div>
+										<div role="text">Tempor orci dapibus ultrices in.</div>
 										<p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
 											sed risus.</p>
-										<span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+										<span class="button is-link modal-button" 
+										data-target="modal-card" 
+										tabindex="0" 
+										role="button"
+										aria-controls="modal-card">
+											Modal Card
+											<span class="visuallyhidden">&nbsp;click to open window</span>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -363,7 +371,14 @@
 									<div class="content">
 										<div>Click anywhere on card</div>
 										<p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-										<span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
+										<span class="button is-link modal-button" 
+										data-target="modal-image2" 
+										tabindex="0" 
+										role="button"
+										aria-controls="modal-image2">
+											Image modal
+											<span class="visuallyhidden">&nbsp;click to open window</span>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -372,17 +387,17 @@
 				</div>
 			</div>
 
-			<div class="tab-pane" id="pane-3">
+			<div class="tab-pane" id="pane-3" role="tabpanel" aria-expanded="false">
 				<div class="columns medias">
 					<div class="column">
 						<div class="media">
 							<div class="media-left">
-								<i class="fab fa-github-square fa-4x"></i>
+								<i aria-hidden="true" class="fab fa-github-square fa-4x"></i>
 							</div>
 							<div class="media-content">
 								<div class="content">
 									<p>
-										<a tabindex="0"><b>Dominic Ipsum</b></a>
+										<a tabindex="0" role="link"><b>Dominic Ipsum</b></a>
 										<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 									</p>
 								</div>
@@ -390,12 +405,12 @@
 						</div>
 						<div class="media">
 							<div class="media-left">
-								<i class="fab fa-empire fa-4x"></i>
+								<i aria-hidden="true" class="fab fa-empire fa-4x"></i>
 							</div>
 							<div class="media-content">
 								<div class="content">
 									<p>
-										<a tabindex="0"><b>Cassie Ipsum</b></a>
+										<a tabindex="0" role="link"><b>Cassie Ipsum</b></a>
 										<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 									</p>
 								</div>
@@ -405,12 +420,12 @@
 					<div class="column">
 						<div class="media">
 							<div class="media-left">
-								<i class="fab fa-ravelry fa-4x"></i>
+								<i aria-hidden="true" class="fab fa-ravelry fa-4x"></i>
 							</div>
 							<div class="media-content">
 								<div class="content">
 									<p>
-										<a tabindex="0"><b>Avery Ipsum</b></a>
+										<a tabindex="0" role="link"><b>Avery Ipsum</b></a>
 										<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 									</p>
 								</div>
@@ -418,12 +433,12 @@
 						</div>
 						<div class="media">
 							<div class="media-left">
-								<i class="fab fa-github-alt fa-4x"></i>
+								<i aria-hidden="true" class="fab fa-github-alt fa-4x"></i>
 							</div>
 							<div class="media-content">
 								<div class="content">
 									<p>
-										<a tabindex="0"><b>io Ipsum</b></a>
+										<a tabindex="0" role="link"><b>io Ipsum</b></a>
 										<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 									</p>
 								</div>
@@ -433,7 +448,7 @@
 				</div>
 			</div>
 
-			<div class="tab-pane" id="pane-4">
+			<div class="tab-pane" id="pane-4" role="tabpanel" aria-expanded="false">
 				<div class="columns is-centered">
 					<div class="column is-three-quarters">
 						<div class="title has-text-centered">Inspired video</div>
@@ -458,11 +473,11 @@
 							<div class="image">
 								<img alt="image web access summit logo" src="./img/web-access-summit-eventbrite.jpg">
 							</div>
-							<p class="title">New York</p>
+							<h4 class="title" role="heading" aria-level="4">New York</h4>
 							<p class="subtitle">Fri 27 Nov 2016</p>
 							<button tabindex="0" class="button">
 								Buy Tickets
-								<span class="visuallyhidden">New York at Fri 27 Nov 2016</span>
+								<span class="visuallyhidden">&nbsp;New York at Fri 27 Nov 2016</span>
 							</button>
 						</div>
 					</div>
@@ -471,11 +486,11 @@
 							<div class="image">
 								<img alt="image Los Angeles event" src="./img/access.jpg">
 							</div>
-							<p class="title">Los Angeles</p>
+							<h4 class="title" role="heading" aria-level="4">Los Angeles</h4>
 							<p class="subtitle">Fri 27 Nov 2016</p>
 							<button tabindex="0" class="button">
 								Buy Tickets
-								<span class="visuallyhidden">Los Angeles at Fri 27 Nov 2016</span>
+								<span class="visuallyhidden">&nbsp;Los Angeles at Fri 27 Nov 2016</span>
 							</button>
 						</div>
 					</div>
@@ -484,11 +499,11 @@
 							<div class="image">
 								<img alt="image Mexico dot css event" src="./img/dotcss-2019.jpg">
 							</div>
-							<p class="title">Mexico</p>
+							<h4 class="title" role="heading" aria-level="4">Mexico</h4>
 							<p class="subtitle">Fri 27 Nov 2016</p>
 							<button tabindex="0" class="button">
 								Buy Tickets
-								<span class="visuallyhidden">Mexico at Fri 27 Nov 2016</span>
+								<span class="visuallyhidden">&nbsp;Mexico at Fri 27 Nov 2016</span>
 							</button>
 						</div>
 					</div>
@@ -500,11 +515,11 @@
 							<div class="image">
 								<img alt="image Paris acess a11y event" src="./img/images.jpg">
 							</div>
-							<p class="title">Paris</p>
+							<h4 class="title" role="heading" aria-level="4">Paris</h4>
 							<p class="subtitle">Fri 27 Nov 2016</p>
 							<button tabindex="0" class="button">
 								Buy Tickets
-								<span class="visuallyhidden">Paris at Fri 27 Nov 2016</span>
+								<span class="visuallyhidden">&nbsp;Paris at Fri 27 Nov 2016</span>
 							</button>
 						</div>
 					</div>
@@ -513,11 +528,11 @@
 							<div class="image">
 								<img alt="image Minsk css js event" src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png">
 							</div>
-							<p class="title">Minsk</p>
+							<h4 class="title" role="heading" aria-level="4">Minsk</h4>
 							<p class="subtitle">Fri 27 Nov 2016</p>
 							<button tabindex="0" class="button">
 								Buy Tickets
-								<span class="visuallyhidden">Minsk at Fri 27 Nov 2016</span>
+								<span class="visuallyhidden">&nbsp;Minsk at Fri 27 Nov 2016</span>
 							</button>
 						</div>
 					</div>
@@ -526,11 +541,11 @@
 							<div class="image">
 								<img alt="image London event" src="./img/access.jpg">
 							</div>
-							<p class="title">London</p>
+							<h4 class="title" role="heading" aria-level="4">London</h4>
 							<p class="subtitle">Fri 27 Nov 2016</p>
 							<button tabindex="0" class="button">
 								Buy Tickets
-								<span class="visuallyhidden">London at Fri 27 Nov 2016</span>
+								<span class="visuallyhidden">&nbsp;London at Fri 27 Nov 2016</span>
 							</button>
 						</div>
 					</div>
@@ -600,8 +615,9 @@
 									<p class="card-header-title">
 										<span>Admin <small>(Light)</small></span>
 										<span class="is-pulled-right">
-											<a tabindex="0">
+											<a tabindex="0" role="link">
 												<span class="tag is-default">v0.7.2</span>
+												<span class="visuallyhidden">&nbsp;Admin(Light)</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
 											<span class="tag is-danger">WIP</span>
@@ -616,11 +632,11 @@
 								<div class="card-footer">
 									<button tabindex="0" class="card-footer-item">
 										Preview
-										<span class="visuallyhidden">Admin Light albom</span>
+										<span class="visuallyhidden">&nbsp;Admin Light albom</span>
 									</button>
 									<button tabindex="0" class="card-footer-item">
 										Source Code
-										<span class="visuallyhidden">Admin Light</span>
+										<span class="visuallyhidden">&nbsp;Admin Light</span>
 									</button>
 								</div>
 							</div>
@@ -631,8 +647,9 @@
 									<p class="card-header-title">
 										<span>Cards</span>
 										<span class="is-pulled-right">
-											<a tabindex="0">
+											<a tabindex="0" role="link">
 												<span class="tag is-default">v0.7.2</span>
+												<span class="visuallyhidden">&nbsp;Cards</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
 											<span class="tag is-default">?</span>
@@ -647,11 +664,11 @@
 								<div class="card-footer">
 									<button tabindex="0" class="card-footer-item">
 										Preview
-										<span class="visuallyhidden">Cards albom</span>
+										<span class="visuallyhidden">&nbsp;Cards albom</span>
 									</button>
 									<button tabindex="0" class="card-footer-item">
 										Source Code
-										<span class="visuallyhidden">Cards</span>
+										<span class="visuallyhidden">&nbsp;Cards</span>
 									</button>
 									</div>
 							</div>
@@ -662,8 +679,10 @@
 									<p class="card-header-title">
 										<span>Forum</span>
 										<span class="is-pulled-right">
-											<a tabindex="0">
+											<a tabindex="0" role="link">
 												<span class="tag is-default">v0.7.2</span>
+												<span class="visuallyhidden">&nbsp;Forum</span>
+
 											</a>
 											<span class="tag is-default">Desktop</span>
 											<span class="tag is-default">Mobile</span>
@@ -678,11 +697,11 @@
 								<div class="card-footer">
 									<button tabindex="0" class="card-footer-item">
 										Preview
-										<span class="visuallyhidden">Forum albom</span>
+										<span class="visuallyhidden">&nbsp;Forum albom</span>
 									</button>
 									<button tabindex="0" class="card-footer-item">
 										Source Code
-										<span class="visuallyhidden">Forum</span>
+										<span class="visuallyhidden">&nbsp;Forum</span>
 									</button>
 								</div>
 							</div>
@@ -695,8 +714,9 @@
 									<p class="card-header-title">
 										<span>InstaAlbum</span>
 										<span class="is-pulled-right">
-											<a tabindex="0">
+											<a tabindex="0" role="link">
 												<span class="tag is-default">v0.7.2</span>
+												<span class="visuallyhidden">&nbsp;InstaAlbum</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
 											<span class="tag is-default">Mobile</span>
@@ -711,11 +731,11 @@
 								<div class="card-footer">
 									<button tabindex="0" class="card-footer-item">
 										Preview
-										<span class="visuallyhidden">Insta Album</span>
+										<span class="visuallyhidden">&nbsp;Insta Album</span>
 									</button>
 									<button tabindex="0" class="card-footer-item">
 										Source Code
-										<span class="visuallyhidden">Insta Album</span>
+										<span class="visuallyhidden">&nbsp;Insta Album</span>
 									</button>
 								</div>
 							</div>
@@ -726,8 +746,9 @@
 									<p class="card-header-title">
 										<span>Landing</span>
 										<span class="is-pulled-right">
-											<a tabindex="0">
+											<a tabindex="0" role="link">
 												<span class="tag is-default">v0.7.2</span>
+												<span class="visuallyhidden">&nbsp;Landing</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
 											<span class="tag is-default">Mobile</span>
@@ -742,11 +763,11 @@
 								<div class="card-footer">
 									<button tabindex="0" class="card-footer-item">
 										Preview
-										<span class="visuallyhidden">Landing albom</span>
+										<span class="visuallyhidden">&nbsp;Landing albom</span>
 									</button>
 									<button tabindex="0" class="card-footer-item">
 										Source Code
-										<span class="visuallyhidden">Landing</span>
+										<span class="visuallyhidden">&nbsp;Landing</span>
 									</button>
 								</div>
 							</div>
@@ -757,8 +778,9 @@
 									<p class="card-header-title">
 										<span>Marketing</span>
 										<span class="is-pulled-right">
-											<a tabindex="0">
+											<a tabindex="0" role="link">
 												<span class="tag is-default">v0.7.2</span>
+												<span class="visuallyhidden">&nbsp;Marketing</span>
 											</a>
 											<span class="tag is-default">Desktop</span>
 											<span class="tag is-default">Mobile</span>
@@ -773,11 +795,11 @@
 								<div class="card-footer">
 									<button tabindex="0" class="card-footer-item">
 										Preview
-										<span class="visuallyhidden">Marketing albom</span>
+										<span class="visuallyhidden">&nbsp;Marketing albom</span>
 									</button>
-									<button tabindex="0" class="card-footer-item">
+									<button tabindex="0" class="card-footer-item" >
 										Source Code
-										<span class="visuallyhidden">Marketing</span>
+										<span class="visuallyhidden">&nbsp;Marketing</span>
 									</button>
 								</div>
 							</div>
@@ -817,19 +839,19 @@
 								<div class="media">
 									<div class="media-left">
 										<p class="image is-32x32">
-											<img alt="avatar user jsmith" src="https://source.unsplash.com/random/64x64/?sig=300">
+											<img alt="avatar user jsmith" src="https://source.unsplash.com/random/64x64/?sig=300" aria-hidden="true">
 										</p>
 									</div>
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a tabindex="0">@jsmith</a> replied 34 minutes ago &nbsp;
+												<a tabindex="0" role="link">@jsmith<span class="visuallyhidden">&nbsp;go to user page</span></a> replied 34 minutes ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
 									</div>
 									<div class="media-right">
-										<span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+										<span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 1</span>
 									</div>
 								</div>
 							</div>
@@ -839,19 +861,19 @@
 								<div class="media">
 									<div class="media-left">
 										<p class="image is-32x32">
-											<img alt="avatar user red" src="https://source.unsplash.com/random/64x64/?sig=301">
+											<img alt="avatar user red" src="https://source.unsplash.com/random/64x64/?sig=301" aria-hidden="true">
 										</p>
 									</div>
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a tabindex="0">@red</a> replied 40 minutes ago &nbsp;
+												<a tabindex="0" role="link">@red<span class="visuallyhidden">&nbsp;go to user page</span></a> replied 40 minutes ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
 									</div>
 									<div class="media-right">
-										<span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+										<span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 0</span>
 									</div>
 								</div>
 							</div>
@@ -861,19 +883,19 @@
 								<div class="media">
 									<div class="media-left">
 										<p class="image is-32x32">
-											<img alt="avatar user jsmith" src="https://source.unsplash.com/random/64x64/?sig=302">
+											<img alt="avatar user jsmith2" src="https://source.unsplash.com/random/64x64/?sig=302" aria-hidden="true">
 										</p>
 									</div>
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a tabindex="0">@jsmith</a> replied 53 minutes ago &nbsp;
+												<a tabindex="0" role="link">@jsmith<span class="visuallyhidden">&nbsp;go to user page</span></a> replied 53 minutes ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
 									</div>
 									<div class="media-right">
-										<span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+										<span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 13</span>
 									</div>
 								</div>
 							</div>
@@ -883,19 +905,19 @@
 								<div class="media">
 									<div class="media-left">
 										<p class="image is-32x32">
-											<img alt="avatar user brown" src="https://source.unsplash.com/random/64x64/?sig=303">
+											<img alt="avatar user brown" src="https://source.unsplash.com/random/64x64/?sig=303" aria-hidden="true">
 										</p>
 									</div>
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a tabindex="0">@brown</a> replied 3 hours ago &nbsp;
+												<a tabindex="0" role="link">@brown<span class="visuallyhidden">&nbsp;go to user page</span></a> replied 3 hours ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
 									</div>
 									<div class="media-right">
-										<span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+										<span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
 									</div>
 								</div>
 							</div>
@@ -905,19 +927,19 @@
 								<div class="media">
 									<div class="media-left">
 										<p class="image is-32x32">
-											<img alt="avatar user hamburgler" src="https://source.unsplash.com/random/64x64/?sig=304">
+											<img alt="avatar user hamburgler" src="https://source.unsplash.com/random/64x64/?sig=304" aria-hidden="true">
 										</p>
 									</div>
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a tabindex="0">@hamburgler</a> replied 5 hours ago &nbsp;
+												<a tabindex="0" role="link">@hamburgler<span class="visuallyhidden">&nbsp;go to user page</span></a> replied 5 hours ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
 									</div>
 									<div class="media-right">
-										<span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+										<span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
 									</div>
 								</div>
 							</div>
@@ -927,19 +949,21 @@
 								<div class="media">
 									<div class="media-left">
 										<p class="image is-32x32">
-											<img alt="avatar user rapper" src="https://source.unsplash.com/random/64x64/?sig=305">
+											<img alt="avatar user rapper" src="https://source.unsplash.com/random/64x64/?sig=305" aria-hidden="true">
 										</p>
 									</div>
 									<div class="media-content">
 										<div class="content">
 											<p>
-												<a tabindex="0">@rapper</a> replied 3 hours ago &nbsp;
+												<a tabindex="0" role="link">@rapper 
+													<span class="visuallyhidden">&nbsp;go to user page</span>
+												</a> replied 3 hours ago &nbsp;
 												<span class="tag">Question</span>
 											</p>
 										</div>
 									</div>
 									<div class="media-right">
-										<span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+										<span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
 									</div>
 								</div>
 							</div>
@@ -971,10 +995,10 @@
 							<div class="control has-icons-left has-icons-right">
 								<input id="username" class="input is-success" type="text">
 								<span class="icon is-small is-left">
-									<i class="fas fa-user"></i>
+									<i aria-hidden="true" class="fas fa-user"></i>
 								</span>
 								<span class="icon is-small is-right">
-									<i class="fas fa-check"></i>
+									<i aria-hidden="true" class="fas fa-check"></i>
 								</span>
 							</div>
 							<p class="help is-success">This username is available</p>
@@ -985,10 +1009,10 @@
 							<div class="control has-icons-left has-icons-right">
 								<input id="contactEmail" class="input is-danger" type="email" placeholder="Email input" value="hello@">
 								<span class="icon is-small is-left">
-									<i class="fas fa-envelope"></i>
+									<i aria-hidden="true" class="fas fa-envelope"></i>
 								</span>
 								<span class="icon is-small is-right">
-									<i class="fas fa-exclamation-triangle"></i>
+									<i aria-hidden="true" class="fas fa-exclamation-triangle"></i>
 								</span>
 							</div>
 							<p class="help is-danger">This email is invalid</p>
@@ -1016,8 +1040,8 @@
 						<div class="field">
 							<div class="control">
 								<label for="agreeCheckbox" class="checkbox">
-									<input id="agreeCheckbox" type="checkbox">
-									I agree to the <a tabindex="0">terms and conditions</a>
+									<input id="agreeCheckbox" type="checkbox" aria-required="true" aria-invalid="false">
+									I agree to the <a tabindex="0" role="link">terms and conditions</a>
 								</label>
 							</div>
 						</div>
@@ -1035,7 +1059,8 @@
 								</label>
 							</div>
 						</fieldset>
-
+						<label for="warning" class="visuallyhidden">Label for warning</label>
+						<input id="warning" class="warning" aria-live="assertive" value="no message yet"></input>
 						<div class="field is-grouped no-border">
 							<div class="control">
 								<button class="button is-link">Submit</button>
@@ -1056,7 +1081,7 @@
           <div class="notification media has-background-white">
             <div class="media-left">
               <span class="icon">
-                <i class="has-text-warning fas fa-columns fa-lg"></i>
+                <i aria-hidden="true" class="has-text-warning fas fa-columns fa-lg"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1073,7 +1098,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-info">
-                <i class="fab fa-lg fa-wpforms"></i>
+                <i aria-hidden="true" class="fab fa-lg fa-wpforms"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1090,7 +1115,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cubes"></i>
+                <i aria-hidden="true" class="fas fa-lg fa-cubes"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1107,7 +1132,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-grey">
-                <i class="fas fa-lg fa-cogs"></i>
+                <i aria-hidden="true" class="fas fa-lg fa-cogs"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1124,7 +1149,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-primary">
-                <i class="fas fa-lg fa-warehouse"></i>
+                <i aria-hidden="true" class="fas fa-lg fa-warehouse"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1141,7 +1166,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cube"></i>
+                <i aria-hidden="true" class="fas fa-lg fa-cube"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1158,75 +1183,75 @@
     </div>
   </div> -->
 	</main>
-  <footer class="footer" aria-label="footer">
+  <footer class="footer" aria-label="footer" role="contentinfo">
     <div class="container">
       <div class="columns">
         <section class="column is-3 is-offset-2" aria-label="list of Lessons">
           <h3 class="is-3 title"><b>Lessons</b></h3>
           <ul>
-            <li><a tabindex="0">Lorem ipsum dolor sit amet</a></li>
-            <li><a tabindex="0">Vestibulum errato isse</a></li>
-            <li><a tabindex="0">Lorem ipsum dolor sit amet</a></li>
-            <li><a tabindex="0">Aisia caisia</a></li>
-            <li><a tabindex="0">Murphy's law</a></li>
-            <li><a tabindex="0">Flimsy Lavenrock</a></li>
-            <li><a tabindex="0">Maven Mousie Lavender</a></li>
+            <li><a tabindex="0" role="link">Lorem ipsum dolor sit amet</a></li>
+            <li><a tabindex="0" role="link">Vestibulum errato isse</a></li>
+            <li><a tabindex="0" role="link">Lorem ipsum dolor sit amet</a></li>
+            <li><a tabindex="0" role="link">Aisia caisia</a></li>
+            <li><a tabindex="0" role="link">Murphy's law</a></li>
+            <li><a tabindex="0" role="link">Flimsy Lavenrock</a></li>
+            <li><a tabindex="0" role="link">Maven Mousie Lavender</a></li>
           </ul>
         </section>
         <section class="column is-3" aria-label="list of news">
           <h3 class="is-3 title"><b>News</b></h3>
           <ul>
-            <li><a tabindex="0">Labore et dolore magna aliqua</a></li>
-            <li><a tabindex="0">Kanban airis sum eschelor</a></li>
-            <li><a tabindex="0">Modular modern free</a></li>
-            <li><a tabindex="0">The king of clubs</a></li>
-            <li><a tabindex="0">The Discovery Dissipation</a></li>
-            <li><a tabindex="0">Course Correction</a></li>
-            <li><a tabindex="0">Better Angels</a></li>
+            <li><a tabindex="0" role="link">Labore et dolore magna aliqua</a></li>
+            <li><a tabindex="0" role="link">Kanban airis sum eschelor</a></li>
+            <li><a tabindex="0" role="link">Modular modern free</a></li>
+            <li><a tabindex="0" role="link">The king of clubs</a></li>
+            <li><a tabindex="0" role="link">The Discovery Dissipation</a></li>
+            <li><a tabindex="0" role="link">Course Correction</a></li>
+            <li><a tabindex="0" role="link">Better Angels</a></li>
           </ul>
         </section>
         <section class="column is-4" aria-label="list of help articles">
           <h3 class="is-3 title"><b>Help</b></h3>
           <ul>
-            <li><a tabindex="0">Objects in space</a></li>
-            <li><a tabindex="0">Playing cards with coyote</a></li>
-            <li><a tabindex="0">Goodbye Yellow Brick Road</a></li>
-            <li><a tabindex="0">The Garden of Forking Paths</a></li>
-            <li><a tabindex="0">Future Shock</a></li>
+            <li><a tabindex="0" role="link">Objects in space</a></li>
+            <li><a tabindex="0" role="link">Playing cards with coyote</a></li>
+            <li><a tabindex="0" role="link">Goodbye Yellow Brick Road</a></li>
+            <li><a tabindex="0" role="link">The Garden of Forking Paths</a></li>
+            <li><a tabindex="0" role="link">Future Shock</a></li>
           </ul>
         </section>
       </div>
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a tabindex="0">
-						<i class="fab fa-github-alt fa-2x"></i>
-						<span class="visuallyhidden">Visit our github. Link will open an external website in a new tab.</span>
+          <a tabindex="0" role="link">
+						<i aria-hidden="true" class="fab fa-github-alt fa-2x"></i>
+						<span class="visuallyhidden">&nbsp;Visit our github. Link will open an external website in a new tab.</span>
 					</a>
-          <a tabindex="0">
-						<i class="fab fa-youtube fa-2x"></i>
-						<span class="visuallyhidden">Visit our youtube channel. Link will open an external website in a new tab.</span>
+          <a tabindex="0" role="link">
+						<i aria-hidden="true" class="fab fa-youtube fa-2x"></i>
+						<span class="visuallyhidden">&nbsp;Visit our youtube channel. Link will open an external website in a new tab.</span>
 					</a>
-          <a tabindex="0">
-						<i class="fab fa-facebook fa-2x"></i>
-						<span class="visuallyhidden">Visit our facebook. Link will open an external website in a new tab.</span>
+          <a tabindex="0" role="link">
+						<i aria-hidden="true" class="fab fa-facebook fa-2x"></i>
+						<span class="visuallyhidden">&nbsp;Visit our facebook. Link will open an external website in a new tab.</span>
 					</a>
-          <a tabindex="0">
-						<i class="fab fa-twitter fa-2x"></i>
-						<span class="visuallyhidden">Visit our twitter. Link will open an external website in a new tab.</span>
+          <a tabindex="0" role="link">
+						<i aria-hidden="true" class="fab fa-twitter fa-2x"></i>
+						<span class="visuallyhidden">&nbsp;Visit our twitter. Link will open an external website in a new tab.</span>
 					</a>
         </div>
         <p>
 					The source code is licensed 
 					<a target="_blank" href="http://opensource.org/licenses/mit-license.php">
 						MIT 
-						<span class="visuallyhidden">Opens an external website in a new tab.</span>
-						<i class="fa fa-external-link-alt"></i> 
+						<span class="visuallyhidden">&nbsp;Opens an external website in a new tab.</span>
+						<i aria-hidden="true" class="fa fa-external-link-alt"></i> 
 					</a>
 				</p>
       </div>
     </div>
-		<div id="modal-card" class="modal modal-fx-3dSlit">
+		<div id="modal-card" class="modal modal-fx-3dSlit" >
 			<div class="modal-background"></div>
 			<div class="modal-content is-tiny">
 				<div class="card">
@@ -1239,12 +1264,12 @@
 						<div class="media">
 							<div class="media-left">
 								<div class="image is-48x48">
-									<img alt="modal random image 2" src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
+									<img alt="modal random image 2" src="http://www.radfaces.com/images/avatars/linda-barret.jpg" aria-hidden="true">
 								</div>
 							</div>
 							<div class="media-content">
 								<h4 class="title is-4">Jane Doe</h4>
-								<div class="subtitle is-6">@jane_doe</div>
+								<div class="subtitle is-6">@jane_doe<span class="visuallyhidden">&nbsp;go to user page</span></div>
 							</div>
 						</div>
 						<div class="content">
@@ -1252,9 +1277,9 @@
             Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
             Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
             nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-							<a tabindex="0">@testio</a>.
-							<a tabindex="0">#css</a>
-							<a tabindex="0">#responsive</a>
+							<a tabindex="0" role="link">@testio<span class="visuallyhidden">&nbsp;go to user page</span></a>.
+							<a tabindex="0" role="link">#css</a>
+							<a tabindex="0" role="link">#responsive</a>
 							<br>
 							<time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
 						</div>

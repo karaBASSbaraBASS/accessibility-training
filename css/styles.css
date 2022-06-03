@@ -8,6 +8,11 @@
 	border: 0;
 }
 
+.warning{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
 #navigation span{
 	background-color: white !important;
 }
