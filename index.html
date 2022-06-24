@@ -281,25 +281,25 @@
 		<div class="hero is-info">
 			<div class="hero-body">
 				<div class="container">
-					<div class="title">List of topics</div>
+					<div id="topicsListHeading" class="title">List of topics</div>
 					<div class="subtitle">We are always in touch we the outside world</div>
 				</div>
 			</div>
 			<div class="tabs is-boxed is-centered main-menu" id="nav">
-				<ul role="tablist">
-					<li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab" aria-expanded="true" aria-selected="true">
+				<ul role="tablist" aria-labelledby="topicsListHeading">
+					<li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab" aria-expanded="true" aria-selected="true" aria-controls="pane-1" data-target="pane-1">
 						<a role="button">
 							<span class="icon is-small"><i aria-hidden="true" class="fa fa-image"></i></span>
 							<span>Pictures</span>
 						</a>
 					</li>
-					<li data-target="pane-3" id="3" tabindex="0" role="tab" aria-expanded="false" aria-selected="false">
+					<li data-target="pane-3" id="3" tabindex="-1" role="tab" aria-expanded="false" aria-selected="false" aria-controls="pane-3" data-target="pane-3">
 						<a role="button">
 							<span class="icon is-small"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
 							<span>Team</span>
 						</a>
 					</li>
-					<li data-target="pane-4" id="4" tabindex="0" role="tab" aria-expanded="false" aria-selected="false">
+					<li data-target="pane-4" id="4" tabindex="-1" role="tab" aria-expanded="false" aria-selected="false" aria-controls="pane-4" data-target="pane-4">
 						<a role="button">
 							<span class="icon is-small"><i aria-hidden="true" class="fa fa-film"></i></span>
 							<span>Video</span>
@@ -310,7 +310,7 @@
 		</div>
 
 		<div class="tab-content container">
-			<div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-expanded="true">
+			<div class="tab-pane is-active" id="pane-1" role="tabpanel" aria-expanded="true" aria-labelledby="1">
 				<div class="container">
 					<div class="columns features">
 						<div class="column is-4">
@@ -387,7 +387,7 @@
 				</div>
 			</div>
 
-			<div class="tab-pane" id="pane-3" role="tabpanel" aria-expanded="false">
+			<div class="tab-pane" id="pane-3" role="tabpanel" aria-expanded="false" aria-labelledby="3" hidden>
 				<div class="columns medias">
 					<div class="column">
 						<div class="media">
@@ -448,7 +448,7 @@
 				</div>
 			</div>
 
-			<div class="tab-pane" id="pane-4" role="tabpanel" aria-expanded="false">
+			<div class="tab-pane" id="pane-4" role="tabpanel" aria-expanded="false" aria-labelledby="4" hidden>
 				<div class="columns is-centered">
 					<div class="column is-three-quarters">
 						<div class="title has-text-centered">Inspired video</div>
@@ -1308,5 +1308,6 @@
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>
+  <script async src="js/tabpanel.js"></script>
 </body>
 </html>

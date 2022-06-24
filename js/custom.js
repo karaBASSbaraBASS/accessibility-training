@@ -7,39 +7,39 @@
   });
 })();
 
-document.querySelectorAll("#nav li").forEach(function (navEl) {
-  navEl.onclick = function () {
-    toggleTab(this.id, this.dataset.target);
-  };
-});
+// document.querySelectorAll("#nav li").forEach(function (navEl) {
+//   navEl.onclick = function () {
+//     toggleTab(this.id, this.dataset.target);
+//   };
+// });
 
-function toggleTab(selectedNav, targetId) {
-  var navEls = document.querySelectorAll("#nav li");
+// function toggleTab(selectedNav, targetId) {
+//   var navEls = document.querySelectorAll("#nav li");
 
-  navEls.forEach(function (navEl) {
-    if (navEl.id == selectedNav) {
-      navEl.classList.add("is-active");
-      navEl.setAttribute("aria-expanded", "true");
-    } else {
-      if (navEl.classList.contains("is-active")) {
-        navEl.classList.remove("is-active");
-        navEl.setAttribute("aria-expanded", "false");
-      }
-    }
-  });
+//   navEls.forEach(function (navEl) {
+//     if (navEl.id == selectedNav) {
+//       navEl.classList.add("is-active");
+//       navEl.setAttribute("aria-expanded", "true");
+//     } else {
+//       if (navEl.classList.contains("is-active")) {
+//         navEl.classList.remove("is-active");
+//         navEl.setAttribute("aria-expanded", "false");
+//       }
+//     }
+//   });
 
-  var tabs = document.querySelectorAll(".tab-pane");
+//   var tabs = document.querySelectorAll(".tab-pane");
 
-  tabs.forEach(function (tab) {
-    if (tab.id == targetId) {
-      tab.style.display = "block";
-      tab.setAttribute("aria-expanded", "true");
-    } else {
-      tab.style.display = "none";
-      tab.setAttribute("aria-expanded", "false");
-    }
-  });
-}
+//   tabs.forEach(function (tab) {
+//     if (tab.id == targetId) {
+//       tab.style.display = "block";
+//       tab.setAttribute("aria-expanded", "true");
+//     } else {
+//       tab.style.display = "none";
+//       tab.setAttribute("aria-expanded", "false");
+//     }
+//   });
+// }
 
 function messageUpdater() {
   let messageBlock = document.querySelector(".warning");
