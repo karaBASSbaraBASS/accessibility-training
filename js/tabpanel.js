@@ -1,20 +1,3 @@
-let keys = {
-  end: 35,
-  home: 36,
-  left: 37,
-  up: 38,
-  right: 39,
-  down: 40,
-  delete: 46,
-};
-
-let direction = {
-  37: -1,
-  38: -1,
-  39: 1,
-  40: 1,
-};
-
 let tablist = document.querySelectorAll('[role="tablist"]')[0];
 let panels = document.querySelectorAll('[role="tabpanel"]');
 let tabs = document.querySelectorAll('[role="tab"]');
